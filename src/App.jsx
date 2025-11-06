@@ -1,12 +1,11 @@
 import Navbar from "./components/Navbar";
-
+import { StoriesHope } from "./components/StoriesHope";
 
 function App() {
   return (
     <>
       <Navbar />
-      <h1>coisa nova</h1>
-      
+      <StoriesHope />
     </>
   );
 }
