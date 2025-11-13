@@ -11,7 +11,7 @@ export default function BePart() {
 
   // Função para rolar suavemente até a seção do formulário
   const rolarParaFormulario = () => {
-    const section = document.getElementById("form-voluntary");
+    const section = document.getElementById("contact");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
