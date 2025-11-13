@@ -1,4 +1,4 @@
-.familia-section {
+.family-section {
   background-color: #800080;
   padding: 4rem 0;
   text-align: center;
@@ -10,13 +10,13 @@
   box-sizing: border-box;
 }
 
-.familia-container {
+.family-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.familia-titulo {
+.family-titulo {
   color: #fff;
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
@@ -37,11 +37,14 @@
   width: 270px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(146, 83, 102, 0.2);
 }
 
 .card h3 {
@@ -71,6 +74,13 @@
   background-color: #c94978;
 }
 
+.card button:focus {
+  outline: 2px solid #d12d75; 
+  outline-offset: 3px;
+}
+
+
+
 /* Responsividade */
 @media (max-width: 900px) {
   .cards-container {
@@ -81,7 +91,7 @@
     width: 220px;
   }
 
-  .familia-titulo {
+  .family-titulo {
     font-size: 1.6rem;
   }
 }
@@ -98,7 +108,7 @@
     max-width: 350px;
   }
 
-  .familia-titulo {
+  .family-titulo {
     font-size: 1.4rem;
     margin-bottom: 2rem;
   }
