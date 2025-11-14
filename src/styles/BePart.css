@@ -1,0 +1,127 @@
+.family-section {
+  background-color: #800080;
+  padding: 4rem 0;
+  text-align: center;
+
+  position: relative;
+  width: 100vw;        /* ocupa toda a largura da viewport */
+  left: 50%;
+  transform: translateX(-50%); /* centraliza sem empurrar tudo */
+  box-sizing: border-box;
+}
+
+.family-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.family-titulo {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 270px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(146, 83, 102, 0.2);
+}
+
+.card h3 {
+  color: #d12d75;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.card button {
+  background-color: #e65a8d;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #c94978;
+}
+
+.card button:focus {
+  outline: 2px solid #d12d75; 
+  outline-offset: 3px;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .cards-container {
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 220px;
+  }
+
+  .family-titulo {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .family-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .card button {
+    padding: 0.5rem 1.2rem;
+  }
+}
