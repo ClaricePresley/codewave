@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { StoriesHope } from "./components/StoriesHope";
 import BePart from "./components/BePart";
 import VoluntaryForm from "./components/VoluntaryForm";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <StoriesHope />
               <BePart />
               <VoluntaryForm />
+              <Footer />
             </>
           }
         />
