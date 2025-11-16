@@ -18,7 +18,7 @@ export default function BePart() {
   };
 
   return (
-    <section className="family-section">
+    <section id="contato" className="family-section">
       <div className="family-container">
         <h2 className="family-titulo">Faça Parte da Nossa Família</h2>
 
