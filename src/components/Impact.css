@@ -1,0 +1,68 @@
+
+
+/* Fundo rosa */
+.impact-section {
+
+  background-color: #e91e63;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+
+}
+
+
+/* Título */
+.impact-section h2 {
+ 
+  width: 100vw;
+  margin: 0;
+  padding: 40px 0;
+
+}
+
+/* Texto explicativo */
+.impact-section p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1,2rem;
+  line-height: 1.5;
+}
+
+/* Container dos cards */
+.impact-cards {
+  display: flex;
+  justify-content: center; 
+  gap: 40px;               
+  flex-wrap: wrap;         
+}
+
+
+/* Card individual */
+.card {
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+  flex: 1;          
+  max-width: 300px;  
+  padding: 25px;
+  text-align: center;
+}
+
+/* Ícone */
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Título dentro do card */
+.card h3 {
+  font-size: 1.8rem;
+  margin: 5px 0;
+}
+
+/* Texto pequeno dentro do card */
+.card p {
+  font-size: 8;
+color:#000000
+}

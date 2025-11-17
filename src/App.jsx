@@ -1,12 +1,11 @@
 import Navbar from "./components/Navbar";
-
+import { Impact } from "./components/Impact.jsx"
 
 function App() {
   return (
     <>
       <Navbar />
-      <h1>coisa nova</h1>
-      
+      <Impact/>
     </>
   );
 }
