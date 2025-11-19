@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/VoluntaryForm.css";
 import contactImage from "../assets/contact-image.png";
 
-export default function ContactSection() {
+export  function ContactSection() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [descricao, setDescricao] = useState("");
