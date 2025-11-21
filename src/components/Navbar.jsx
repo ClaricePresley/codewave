@@ -15,7 +15,10 @@ function Navbar() {
 
       <ul className={`menu ${isOpen ? "active" : ""}`}>
         <li><a href="#home" onClick={() => setIsOpen(false)}>Início</a></li>
-        <li><a href="#sobre" onClick={() => setIsOpen(false)}>Quem Somos</a></li>
+        
+        {/* CORRIGIDO */}
+        <li><a href="#quem-somos" onClick={() => setIsOpen(false)}>Quem Somos</a></li>
+
         <li><a href="#impacto" onClick={() => setIsOpen(false)}>Nosso Impacto</a></li>
         <li><a href="#depoimentos" onClick={() => setIsOpen(false)}>Depoimentos</a></li>
         <li><a href="#facaparte" onClick={() => setIsOpen(false)}>Faça Parte</a></li>
