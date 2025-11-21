@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/BePart.css";
-
 export default function BePart() {
   const abrirWhatsApp = (mensagem) => {
     const numero = "5598985547655"; 
@@ -24,14 +23,14 @@ export default function BePart() {
 
         <div className="cards-container">
          
-          <div className="card">
+          <div className="card-bepart">
             <h3>Seja Voluntário</h3>
             <p>Dedique seu tempo e habilidades para ajudar famílias que precisam.</p>
             <button onClick={rolarParaFormulario}>Participar</button>
           </div>
 
         
-          <div className="card">
+          <div className="card-bepart">
             <h3>Faça uma doação</h3>
             <p>Ajude-nos a continuar essa missão</p>
             <button
@@ -44,7 +43,7 @@ export default function BePart() {
           </div>
 
 
-          <div className="card">
+          <div className="card-bepart">
             <h3>Apadrinhamento</h3>
             <p>Apadrinhe e transforme uma história</p>
             <button

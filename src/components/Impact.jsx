@@ -1,5 +1,7 @@
 
 import './Impact.css';
+import { Users,HandHeart, Handshake, Heart, } from 'lucide-react';
+
 export function Impact() {
   return (
     <section className="impact-section">
@@ -8,30 +10,31 @@ export function Impact() {
         Cada número representa uma história de esperança, apoio e transformação
         na vida de famílias que enfrentam doenças raras.
       </p>
+      
 
       <div className="impact-cards">
         <div className="card">
-          <div className="icon">👨‍👩‍👧</div>
+          <div className="icon"> <Users color="white" size={48} /></div>
           <h3>150+</h3>
           <p>Famílias Atendidas</p>
         </div>
 
         <div className="card">
-          <div className="icon">👨‍👩‍👧</div>
+          <div className="icon"><HandHeart color="white" size={48}/></div>
+          <h3>80+</h3>
+          <p>Voluntários Ativos</p>
+        </div>
+
+        <div className="card">
+          <div className="icon"><Handshake color="white" size={48}/></div>
           <h3>200+</h3>
-          <p>Famílias Atendidas</p>
+          <p>Doadores Engajados</p>
         </div>
 
         <div className="card">
-          <div className="icon">👨‍👩‍👧</div>
+          <div className="icon"><Heart color="white" size={48}/></div>
           <h3>50+</h3>
-          <p>Famílias Atendidas</p>
-        </div>
-
-        <div className="card">
-          <div className="icon">👨‍👩‍👧</div>
-          <h3>30+</h3>
-          <p>Famílias Atendidas</p>
+          <p>Projetos</p>
         </div>
       </div>
     </section>
