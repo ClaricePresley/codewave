@@ -1,40 +1,48 @@
 .container {
-  height: 1000px;
+  width: 100%;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
+  padding: 120px 30px 80px;
+  box-sizing: border-box;
+}
+
+.experience {
+  color: black;
 }
 
 .title {
   color: #dd1b57;
-  margin-top: 120px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .description {
-  color: black;
+  color: #000;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 14px;
 }
 
+/* TEXTO DO DEPOIMENTO */
 .testimonials {
   text-align: justify;
-  font-size: 18px;
-
-  color: black;
+  font-size: 16px;
+  color: #000;
   font-style: italic;
-  margin-bottom: 120px;
 }
 
+/* NOME E PAPEL */
 .name {
   color: #dd1b57;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .separator {
-  margin: 20px 0 20px;
+  margin: 20px 0;
   background-color: #c9c9c9;
   height: 1.4px;
   width: 100%;
@@ -42,45 +50,81 @@
 }
 
 .role {
-  color: black;
-  font-weight: regular;
-  font-size: 15px;
+  color: #000;
+  font-size: 14px;
 }
 
 .content {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .starBox {
   margin-top: 10px;
   display: flex;
-  gap: 1.88px;
+  gap: 4px;
   align-items: center;
-
-  img {
-    width: 17.12px;
-    height: 16.35px;
-  }
 }
 
+.starBox img {
+  width: 17px;
+  height: 16px;
+}
+
+/* CARD */
 .card {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  padding: 28px 32px 20px 18px;
+  padding: 24px 20px 20px;
   border: 1px solid #c9c9c9;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+}
 
-  img {
-    width: 25.5px;
-    height: 25.5px;
+.card > img {
+  width: 26px;
+  height: 26px;
+}
+
+/* GRID RESPONSIVO */
+.box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr); /* 1 coluna no mobile */
+  gap: 16px;
+  margin-top: 32px;
+  max-width: 1100px;
+}
+
+/* Tablet: 2 colunas */
+@media (min-width: 768px) {
+  .container {
+    padding: 140px 32px 100px;
+  }
+
+  .box {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .testimonials {
+    font-size: 17px;
   }
 }
 
-.box {
-  display: grid;
-  grid-template-columns: repeat(3, 320px);
-  gap: 24px;
-  justify-content: center;
-}
+/* Desktop: 3 colunas */
+@media (min-width: 1024px) {
+  .box {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
 
+  .title {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
