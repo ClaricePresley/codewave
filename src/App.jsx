@@ -3,14 +3,7 @@ import { Page } from "./components/Page.js";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          Component={Page}
-        />
-      </Routes>
-    </BrowserRouter>
+    <Page />
   );
 }
 export default App;

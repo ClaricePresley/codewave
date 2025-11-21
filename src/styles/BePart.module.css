@@ -1,40 +1,38 @@
-.family-section {
+.familySection {
   background-color: #800080;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   text-align: center;
-
   position: relative;
-  width: 100vw;        /* ocupa toda a largura da viewport */
-  left: 50%;
-  transform: translateX(-50%); /* centraliza sem empurrar tudo */
+  width: 100%;
   box-sizing: border-box;
 }
 
-.family-container {
+.familyContainer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
-.family-titulo {
+.familyTitulo {
   color: #fff;
   font-size: 1.8rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-.cards-container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
-  flex-wrap: wrap;
+/* GRID PRINCIPAL DESKTOP */
+.cardsContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
+/* CARD */
 .card {
   background-color: #fff;
   border-radius: 10px;
   padding: 1.5rem;
-  width: 270px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
@@ -42,11 +40,13 @@
   justify-content: space-between;
 }
 
+/* Hover */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(146, 83, 102, 0.2);
 }
 
+/* Títulos */
 .card h3 {
   color: #d12d75;
   font-size: 1.1rem;
@@ -75,53 +75,31 @@
 }
 
 .card button:focus {
-  outline: 2px solid #d12d75; 
+  outline: 2px solid #d12d75;
   outline-offset: 3px;
 }
 
-
-
-/* Responsividade */
+/* Tablet – 2 colunas */
 @media (max-width: 900px) {
-  .cards-container {
-    gap: 1.5rem;
+  .cardsContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
 
-  .card {
-    width: 220px;
-  }
-
-  .family-titulo {
+  .familyTitulo {
     font-size: 1.6rem;
   }
 }
 
+/* Mobile – 1 coluna */
 @media (max-width: 600px) {
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
+  .cardsContainer {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
-  .card {
-    width: 90%;
-    max-width: 350px;
-  }
-
-  .family-titulo {
+  .familyTitulo {
     font-size: 1.4rem;
     margin-bottom: 2rem;
-  }
-
-  .card h3 {
-    font-size: 1rem;
-  }
-
-  .card p {
-    font-size: 0.85rem;
-  }
-
-  .card button {
-    padding: 0.5rem 1.2rem;
   }
 }

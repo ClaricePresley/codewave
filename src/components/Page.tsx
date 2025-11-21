@@ -10,7 +10,7 @@ export function Page() {
   return (
     <>
       <Navbar />
-      <QuemSomos />  
+      <QuemSomos />
       <StoriesHope />
       <BePart />
       <Impact />

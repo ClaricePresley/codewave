@@ -3,12 +3,13 @@
   width: 100%;
   text-align: center;
   position: relative;
-  padding-bottom: 80px; 
+  
 }
 
 /* Imagem de capa */
 .quem-capa {
   position: relative;
+  width: 100%;
   z-index: 1;
 }
 
@@ -29,6 +30,7 @@
   box-shadow: 0 4px 15px rgba(0,0,0,0.12);
   position: relative;
   z-index: 5; /* garante que fica acima da imagem */
+  
 }
 
 /* Título */
@@ -51,17 +53,34 @@
   margin-right: auto;
 }
 
-/* Imagens de baixo */
 .quem-imagens {
   display: flex;
   justify-content: center;
   gap: 25px;
   margin-top: 25px;
+  flex-wrap: wrap; /* 🔥 permite quebrar linha */
 }
 
 .quem-imagens img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* 🔥 RESPONSIVO — imagens ficam uma embaixo da outra */
+@media (max-width: 768px) {
+  .quem-imagens {
+    gap: 16px; /* um pouco menor no mobile */
+  }
+
+  .quem-imagens img {
+    max-width: 100%; /* 100% da largura disponível */
+    width: 100%;
+  }
+
+  .quem-text-card {
+    padding: 24px; /* reduz padding para caber melhor */
+  }
 }

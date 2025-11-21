@@ -3,8 +3,8 @@ import styles from "./StoriesHope.module.css";
 export function StoriesHope() {
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>Histórias de Esperança</h1>
-      <span>Conheça as experiências de quem faz parte da nossa comunidade</span>
+      <h1 className={styles.title}>Histórias de esperança</h1>
+      <span className={styles.experience}>Conheça as experiências de quem faz parte da nossa comunidade</span>
 
       <div className={styles.box}>
         <div className={styles.card}>
@@ -12,9 +12,9 @@ export function StoriesHope() {
 
           <div className={styles.content}>
             <span className={styles.testimonials}>
-              O Mãos Que Acolhem mudou nossa vida. Encontramos não apenas apoio
-              prático mas uma família que nos compreende e nos fortalece todos
-              os dias
+              O Mãos Que Acolhem transformou completamente nossa rotina. 
+              Aqui encontrei acolhimento, orientação e uma família que 
+              caminha ao meu lado em cada desafio diário.
             </span>
 
             <div className={styles.starBox}>
@@ -27,8 +27,8 @@ export function StoriesHope() {
 
             <div className={styles.separator} />
           </div>
-          <h3 className={styles.name}>Lutriz</h3>
-          <span className={styles.role}>Pai de Paciente</span>
+          <h3 className={styles.name}>Clarice Presley</h3>
+          <span className={styles.role}>Mãe de Paciente</span>
         </div>
 
         <div className={styles.card}>
@@ -36,9 +36,9 @@ export function StoriesHope() {
 
           <div className={styles.content}>
             <span className={styles.testimonials}>
-              O Mãos Que Acolhem mudou nossa vida. Encontramos não apenas apoio
-              prático mas uma família que nos compreende e nos fortalece todos
-              os dias
+              Nunca imaginei encontrar um espaço onde eu pudesse compartilhar 
+              minhas dificuldades sem medo. Hoje me sinto mais forte e 
+              preparado para apoiar minha família.
             </span>
 
             <div className={styles.starBox}>
@@ -51,18 +51,19 @@ export function StoriesHope() {
 
             <div className={styles.separator} />
           </div>
-          <h3 className={styles.name}>Lutriz</h3>
-          <span className={styles.role}>Pai de Paciente</span>
+          <h3 className={styles.name}>João Lucas</h3>
+          <span className={styles.role}>Irmão de Paciente</span>
         </div>
+
 
         <div className={styles.card}>
           <img src="/aspas.png" />
 
           <div className={styles.content}>
             <span className={styles.testimonials}>
-              O Mãos Que Acolhem mudou nossa vida. Encontramos não apenas apoio
-              prático mas uma família que nos compreende e nos fortalece todos
-              os dias
+              Participar do Mãos Que Acolhem foi um divisor de águas. 
+              Aqui encontrei esperança, pessoas verdadeiras e apoio em 
+              momentos que pareciam impossíveis de enfrentar sozinho.
             </span>
 
             <div className={styles.starBox}>
@@ -75,8 +76,8 @@ export function StoriesHope() {
 
             <div className={styles.separator} />
           </div>
-          <h3 className={styles.name}>Lutriz</h3>
-          <span className={styles.role}>Pai de Paciente</span>
+          <h3 className={styles.name}>Iury Noronha</h3>
+          <span className={styles.role}>Voluntário</span>
         </div>
       </div>
     </section>
