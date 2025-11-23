@@ -26,7 +26,6 @@
   font-size: 14px;
 }
 
-/* TEXTO DO DEPOIMENTO */
 .testimonials {
   text-align: justify;
   font-size: 16px;
@@ -34,7 +33,6 @@
   font-style: italic;
 }
 
-/* NOME E PAPEL */
 .name {
   color: #dd1b57;
   font-weight: bold;
@@ -70,7 +68,6 @@
   height: 16px;
 }
 
-/* CARD */
 .card {
   border-radius: 12px;
   display: flex;
@@ -87,17 +84,17 @@
   height: 26px;
 }
 
-/* GRID RESPONSIVO */
+
 .box {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 1fr); /* 1 coluna no mobile */
+  grid-template-columns: minmax(0, 1fr); 
   gap: 16px;
   margin-top: 32px;
   max-width: 1100px;
 }
 
-/* Tablet: 2 colunas */
+/* Tablet */
 @media (min-width: 768px) {
   .container {
     padding: 140px 32px 100px;
@@ -113,7 +110,7 @@
   }
 }
 
-/* Desktop: 3 colunas */
+/* Desktop */
 @media (min-width: 1024px) {
   .box {
     grid-template-columns: repeat(3, minmax(0, 1fr));

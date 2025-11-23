@@ -1,4 +1,5 @@
-import "./QuemSomos.css";
+import "../styles/QuemSomos.css";
+
 
 export function QuemSomos() {
   return (

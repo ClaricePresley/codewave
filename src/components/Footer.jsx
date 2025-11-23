@@ -5,7 +5,7 @@ import logo from "../assets/logo.png"
 
 export default function Footer() {
   return (
-    <footer className="footer-container">
+    <footer id= "footer" className="footer-container">
       <div className="footer-left">
         <p className="footer-item">
           <Mail size={16} /> maosqueacolhem@gmail.com

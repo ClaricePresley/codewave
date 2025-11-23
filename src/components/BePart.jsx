@@ -26,7 +26,7 @@ export default function BePart() {
         <div className={styles.cardsContainer}>
           <div className={styles.card}>
             <h3>Seja Voluntário</h3>
-            <p>Dedique seu tempo e habilidades para ajudar famílias que precisam.</p>
+            <p>Dedique seu tempo e habilidades para ajudar famílias que precisam</p>
             <button onClick={rolarParaFormulario}>Participar</button>
           </div>
 
