@@ -60,7 +60,7 @@
 }
 
 .card button {
-  background-color: #e65a8d;
+ background-color: #e65a8d;
   color: #fff;
   border: none;
   border-radius: 20px;
@@ -68,15 +68,28 @@
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: 
+    background 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card button:hover {
   background-color: #c94978;
 }
 
+.card button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #fff,     
+              0 0 0 6px #e65a8d;
+}
 
-/* Tablet – 2 colunas */
+.card button:active {
+ transform: scale(0.97); 
+}
+
+
+
+/* Tablet */
 @media (max-width: 900px) {
   .cardsContainer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -88,7 +101,7 @@
   }
 }
 
-/* Mobile – 1 coluna */
+/* Mobile */
 @media (max-width: 600px) {
   .cardsContainer {
     grid-template-columns: 1fr;

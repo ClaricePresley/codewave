@@ -1,19 +1,15 @@
-import styles from "./Impact.module.css";
-
-import './Impact.module.css';
+import styles from "../styles/Impact.module.css";
 import { Users,HandHeart, Handshake, Heart, } from 'lucide-react';
 
 export function Impact() {
   return (
-    <section className={styles.impactSection}>
+    <section id= "impact" className={styles.impactSection}>
       <h2>Nosso Impacto</h2>
 
       <p className={styles.description}>
         Cada número representa uma história de esperança, apoio e transformação
         na vida de famílias que enfrentam doenças raras.
       </p>
-      
-
       
       <div className={styles.impactCards}>
 
